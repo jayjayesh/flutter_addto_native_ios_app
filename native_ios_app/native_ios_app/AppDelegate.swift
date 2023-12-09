@@ -6,11 +6,11 @@
 //
 
 import UIKit
+import Flutter
+//import FlutterPluginRegistrant
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -34,3 +34,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+
+///
+class FlutterDependencies: ObservableObject {
+  let npsFlutterEngine = FlutterEngine(name: "flutter_nps_engine")
+
+  init() {
+    // Prepare a Flutter engine in advance.
+    npsFlutterEngine.run()
+  }
+}
