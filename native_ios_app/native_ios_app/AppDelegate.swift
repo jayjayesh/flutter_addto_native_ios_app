@@ -30,8 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 
 
@@ -43,5 +41,9 @@ class FlutterDependencies: ObservableObject {
   init() {
     // Prepare a Flutter engine in advance.
     npsFlutterEngine.run()
+    // npsFlutterEngine.run(withEntrypoint: "main", initialRoute: "/capture")
+    // npsFlutterEngine.run(withEntrypoint: "main", initialRoute: "/end")
+    // npsFlutterEngine.run(withEntrypoint: "main", initialRoute: "/default_hello_world_page")
+    // npsFlutterEngine.run(withEntrypoint: "main", initialRoute: "/default_counter_page")
   }
 }
